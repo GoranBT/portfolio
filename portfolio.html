@@ -1,104 +1,230 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="resources/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="resources/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="resources/slick/slick-theme.css"/>
-  <link rel="stylesheet" href="resources/css/style.css">
-  <title>work</title>
-</head>
-<body>
-  <header>
-    <div class="desktop logo">
-      <!-- <img src="resources/images/ic-logo.svg" alt="logo"/> -->
-      <a href="./index.html" ><h4 class="bold" >Angelovski</h4></a>
-      <h4 class="light"></h4>
-    </div>
-    <!-- Desktop navigation -->
-    <nav class="desktop nav">
-      <a class="link" href="./portfolio.html">Portfolio</a>
-      <a class="link" href="./about.html">About</a>
-      <a class="button" href="./contact.html">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="resources/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title>work</title>
+  </head>
+  <body>
 
-  <div class="three col">
-          <div class="hamburger" id="hamburger-6">
+    <header>
+      <nav>
+        <div>
+          <a href="./index.html" class="logo">Angelovski</a>
+          <div class="hamburger menu toggle" id="hamburger-11">
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
           </div>
+          <ul class="desktop">
+            <li><a class="link" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="link" href="./about.html">About</a></li>
+            <li><a class="button" href="./contact.html">Contact</a></li>
+          </ul>
         </div>
-<main>
-  <section>
-    <h1 class="projects-title flex border">Projects</h1>
-    <div class="projects-box-wrapper flex">
-      <div class="box border">
-        <div class="carousel">
-        </div>
-        <div class="description flex">
-          <h2>Colmar Academy</h2>
-          <p></p>
-          <p></p>
-        </div>
+        <ul class="mobile">
+          <li><a class="link" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="link" href="./about.html">About</a></li>
+          <li><a class="button button-button" href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main>
+      <section>
+        <div class="projects-title-holder">
+        <h1 class="projects-title flex border">Projects</h1>
       </div>
-      <div class="box border">
-        <div class="carousel">
-        </div>
-        <div class="description flex">
-          <h2>Code Ninja</h2>
-          <p></p>
-          <p></p>
-        </div>
-      </div><div class="box border">
-        <div class="carousel">
-        </div>
-        <div class="description flex">
-          <h2>Mix-It</h2>
-          <p></p>
-          <p></p>
-        </div>
-      </div><div class="box border">
-        <div class="carousel">
-        </div>
-        <div class="description flex">
-          <h2>Hidden Travellr</h2>
-          <p></p>
-          <p></p>
-        </div>
-      </div><div class="box border">
-        <div class="carousel">
-        </div>
-        <div class="description flex">
-          <h2>eShopper</h2>
-          <p></p>
-          <p></p>
-        </div>
-      </div>
-      <div class="box border">
-        <div class="carousel">
-          <div class="test">
-            <div class=""><img src="http://via.placeholder.com/350x150"></div>
-            <div class=""><img src="http://via.placeholder.com/350x150"></div>
-            <div class=""><img src="http://via.placeholder.com/350x150"></div>
+        <div class="projects-box-wrapper flex">
+          <div class="box flex border">
+            <div class="carousel-holder border">
+              <div class="carousel flex">
+                <img src="resources/images/projects/project4/1.png">
+                <img src="resources/images/projects/project4/2.jpg">
+                <img src="resources/images/projects/project4/3.jpg">
+                <img src="resources/images/projects/project4/4.png">
+                <img src="resources/images/projects/project4/5.png">
+                <img src="resources/images/projects/project4/6.jpg">
+                <img src="resources/images/projects/project4/7.png">
+              </div>
+            </div>
+            <div class="project-info flex border">
+              <h2 class="project-info-title">eShopper</h2>
+              <p> fully authenticated app where users can buy and sell their unused products.
+              eShopper was built using an Express API for the back end, ReactJS for the front end, Google Places API for the Autocomplete address form,
+              AWS for image uploads and Nodemailer to send email messages.</p>
+
+            <div class="technologies">
+              <img src="resources/images/logo/React.png" alt="">
+              <img src="resources/images/logo/bootstrap.png" alt="">
+              <img src="resources/images/logo/mongodb1.png" alt="">
+              <img src="resources/images/logo/nodejs1.png" alt="">
+              <img src="resources/images/logo/amazon.png" alt="">
+              <img src="resources/images/logo/express.png" alt="">
+            </div>
+            <div class="links">
+              <a href="https://github.com/GoranBT/WDI-project-4">GitHub <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+              <a href="https://eshopper-mk.herokuapp.com/">Heroku <i class="fa fa-globe" aria-hidden="true"></i></a>
+            </div>
+              </div>
+          </div>
+          <div class="box flex border">
+            <div class="project-info flex border">
+              <h2 class="project-info-title">hidden travellr</h2>
+              <p>Hidden Traveller is a MEAN app where people are able to share locations they have been.Travel app that allow users to post spots that are not normally found with travel agencies. hidden-travellr was built using an Express API for the back end, Angular for the front end</p>
+<div class="technologies">
+  <img src="resources/images/logo/AngularJS.png" alt="">
+  <img src="resources/images/logo/bulma.png" alt="">
+  <img src="resources/images/logo/mongodb1.png" alt="">
+  <img src="resources/images/logo/nodejs1.png" alt="">
+  <img src="resources/images/logo/express.png" alt="">
+
+</div>
+<div class="links">
+  <a href="https://github.com/GoranBT/WDI-project-4">GitHub <i class="fa fa-github" aria-hidden="true"></i>
+</a>
+  <a href="https://eshopper-mk.herokuapp.com/">Heroku <i class="fa fa-globe" aria-hidden="true"></i></a>
+</div>
+            </div>
+            <div class="carousel-holder border">
+              <div class="carousel flex">
+                <img src="resources/images/projects/project3/1.png">
+                <img src="resources/images/projects/project3/2.jpg">
+                <img src="resources/images/projects/project3/3.jpg">
+                <img src="resources/images/projects/project3/4.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="box flex border">
+            <div class="carousel-holder border">
+              <div class="carousel flex">
+                <img src="resources/images/projects/project2/1.png">
+                <img src="resources/images/projects/project2/2.jpg">
+                <img src="resources/images/projects/project2/4.png">
+                <img src="resources/images/projects/project2/5.png">
+                <img src="resources/images/projects/project2/6.png">
+                <img src="resources/images/projects/project2/7.png">
+              </div>
+            </div>
+            <div class="project-info flex border">
+               <h2 class="project-info-title">Mix-it</h2>
+              <p>Mix-IT.com is a RESTful app with authentication where users can share and comment cocktail recipes and spirits.</p>
+              <div class="technologies">
+                <img src="resources/images/logo/bulma.png" alt="">
+                <img src="resources/images/logo/mongodb1.png" alt="">
+                <img src="resources/images/logo/nodejs1.png" alt="">
+                <img src="resources/images/logo/express.png" alt="">
+
+              </div>
+              <div class="links">
+                <a href="https://github.com/GoranBT/WDI-project-4">GitHub <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+                <a href="https://eshopper-mk.herokuapp.com/">Heroku <i class="fa fa-globe" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="box flex border">
+            <div class="project-info flex border">
+               <h2 class="project-info-title">Code-Ninja</h2>
+              <p>Icon slicing (fruit-ninja). The game is based on random CSS position changes based on lots of in-game timers.</p>
+              <div class="technologies">
+                <img src="resources/images/logo/jquery.gif" alt="">
+                <img src="resources/images/logo/HTML.png" alt="">
+                <img src="resources/images/logo/css3.png" alt="">
+              </div>
+              <div class="links">
+                <a href="https://github.com/GoranBT/WDI-project-4">GitHub <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+                <a href="https://eshopper-mk.herokuapp.com/">Heroku <i class="fa fa-globe" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="carousel-holder border">
+              <div class="carousel flex">
+                <img src="resources/images/projects/project1/1.png">
+                <img src="resources/images/projects/project1/2.jpg">
+                <img src="resources/images/projects/project1/3.jpg">
+                <img src="resources/images/projects/project1/4.jpg">
+                <img src="resources/images/projects/project1/5.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="box flex border">
+            <div class="carousel-holder border">
+              <div class="carousel flex">
+                <img src="resources/images/projects/project5/1.png">
+                <img src="resources/images/projects/project5/2.jpg">
+                <img src="resources/images/projects/project5/3.jpg">
+                <img src="resources/images/projects/project5/4.jpg">
+                <img src="resources/images/projects/project5/5.jpg">
+              </div>
+            </div>
+            <div class="project-info flex border">
+              <h2 class="project-info-title">colmar academy</h2>
+              <p>Codecademy Capstone project build web sites from scratch
+              A fully responsive design for the fictional Colmar Academy.</p>
+
+              <div class="technologies">
+                <img src="resources/images/logo/HTML.png" alt="">
+                <img src="resources/images/logo/css3.png" alt="">
+              </div>
+              <div class="links">
+                <a href="https://github.com/GoranBT/WDI-project-4">GitHub <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+                <a href="https://eshopper-mk.herokuapp.com/">Heroku <i class="fa fa-globe" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="box flex border">
+            <div class="project-info flex border">
+               <h2 class="project-info-title">Ravenous</h2>
+              <p>A Yelp-like React web application
+              Interacting with the Yelp API
+              A user should be able to search for business, view a list of business returned by the Yelp API sort through business using a filter</p>
+              <div class="technologies">
+                <img src="resources/images/logo/React.png" alt="">
+                <img src="resources/images/logo/bootstrap.png" alt="">
+              </div>
+              <div class="links">
+                <a href="https://github.com/GoranBT/WDI-project-4">GitHub <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+                <a href="https://eshopper-mk.herokuapp.com/">Heroku <i class="fa fa-globe" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="carousel-holder border">
+              <div class="carousel flex">
+                <img src="resources/images/projects/project6/1.png">
+                <img src="resources/images/projects/project6/2.jpg">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="description flex">
-          <h2>Ravenous</h2>
-          <p></p>
-          <p></p>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
+      </section>
+    </main>
 
-<script src="resources/src/jquery.min.js"></script>
-<script type="text/javascript" src="resources/slick/slick.min.js"></script>
-<script src="resources/src/js/app.js" charset="utf-8"></script>
+    <a href="#" class="scrollToTop"><i class="fa fa-arrow-up arrow-up" aria-hidden="true"></i><br />Top</a>
 
-</body>
+    <footer>
+      <span class="made-by">Made by Goran Angelovski</span>
+      <nav>
+        <ul id="spin2">
+          <li class="follow-me"><a href="https://www.facebook.com/goran.angelovski.3" target="_blank"><i class="fa fa-facebook facebook flex" aria-hidden="true"></i></a></li>
+          <li class="follow-me"><a href="https://www.linkedin.com/in/goran-angelovski/" target="_blank"><i class="fa fa-linkedin linkedin flex" aria-hidden="true"></i></a></li>
+          <li class="follow-me"><a href="https://github.com/GoranBT" target="_blank"><i class="fa fa-github github flex" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="resources/slick/slick.min.js"></script>
+    <script src="resources/src/js/app.js" charset="utf-8"></script>
+  </body>
 </html>

@@ -1,116 +1,134 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="resources/css/reset.css">
-  <link rel="stylesheet" href="resources/css/style.css">
-  <script src="resources/src/js/app.js" charset="utf-8"></script>
-  <title>about</title>
-</head>
-<body>
-  <header>
-    <div class="desktop logo">
-      <!-- <img src="resources/images/ic-logo.svg" alt="logo"/> -->
-      <a href="./index.html" ><h4 class="bold" href="./index.html">Angelovski</h4></a>
-      <h4 class="light"></h4>
-    </div>
-    <!-- Desktop navigation -->
-    <nav class="desktop nav">
-      <a class="link" href="./portfolio.html">Portfolio</a>
-      <a class="link" href="./about.html">About</a>
-      <a class="button" href="./contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <h1 class="projects-title flex">About me</h1>
-    <section class="flex">
-      <div class="profile border flex">
-        <div class="profile-image-holder">
-          <img src="https://i.imgur.com/SuTM8dV.jpg" alt="">
-        </div>
-      </div>
-      <div class="info border flex">
-        <h3 class="info-text">
-        <p>Since I was a kid I always had an interest in computers and technology, but my education led me into the world of Physiotherapy where I have spent eight years of my life improving people’s physical health.</p>
-        <hr>
-<p>But the love for computers never went away. I love coding and I find problem solving very satisfying and interesting. Because of this I decided to pursue my dreams of becoming a full-stack web developer and joined the GA Web Development Immersive course.</p>
-<hr>
-<p> Now I would like to start a career in a team where I can continue my education.</p>
-</h3>
-
-      </div>
-    </section>
-    <section class="flex">
-      <div class="education-left-container border">
-        <div class="education-left">
-
-
-      <div class="education-wrapper">
-        <div class="education-title">
-          <h3>EDUCATION</h3>
-        </div>
-        <div class="education">
-          <div class="education-logo flex">
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title>about</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="./index.html" class="logo">Angelovski</a>
+          <div class="hamburger menu toggle" id="hamburger-11">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
           </div>
-          <div class="education-content">
-            <h6>Octomber-December</h5>
-              <h4>Codecademy</h4>
-              <h4>Front end app development</h4>
-            </div>
+          <ul class="desktop">
+            <li><a class="link" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="link" href="./about.html">About</a></li>
+            <li><a class="button button-button" href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <ul class="mobile">
+          <li><a class="link" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="link" href="./about.html">About</a></li>
+          <li><a class="button button-button" href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="">
+      <h1 class="projects-title flex">About me</h1>
+      <section class="about flex">
+        <div class="profile border flex">
+          <div class="profile-image-holder">
+            <img src="resources/images/logo/profile1.jpg" alt="">
           </div>
-          <div class="education ">
-            <div class="education-logo flex ">
-              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-            </div>
-            <div class="education-content">
-              <h6>August-November</h5>
-                <h4>General Assembly</h4>
-                <h4>Web Development Immersive</h4>
+        </div>
+        <div class="info border flex">
+          <h3 class="info-text">
+            <p>Since I was a kid I always had an interest in computers and technology, but my education led me into the world of Physiotherapy where I have spent eight years of my life improving people’s physical health.</p>
+            <hr>
+            <p>But the love for computers never went away. I love coding and I find problem solving very satisfying and interesting. Because of this I decided to pursue my dreams of becoming a full-stack web developer and joined the GA Web Development Immersive course.</p>
+            <hr>
+            <p> Now I would like to start a career in a team where I can continue my education.</p>
+          </h3>
+        </div>
+      </section>
+      <section class="about1 flex">
+        <!-- <div class="education-left-container border">
+          <div class="education-left">
+            <div class="education-wrapper"> -->
+              <!-- <div class="education-title">
+                <h3>EDUCATION</h3>
               </div>
-            </div>
-            <a href="https://www.udemy.com/certificate/UC-ZXMDYAZI/" target=_blank>
-            <div class="education ">
-              <div class="education-logo flex ">
-                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-              </div>
-              <div class="education-content">
-                <h6>June-September</h5>
-                  <h4>Udemy</h4>
-                  <h4>Web Development Bootcamp</h4>
-                </div>
-              </div>
-            </a>
-              <a href="https://www.credential.net/uisdhmib" target=_blank>
-              <div class="education ">
-                <div class="education-logo flex ">
+              <div class="education">
+                <div class="education-logo flex">
                   <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                 </div>
                 <div class="education-content">
-                  <h6>June-September</h5>
-                    <h4>Codecademy</h4>
-                    <h4>Build websites from scratch</h4>
+                  <h6>Octomber-December</h5>
+                  <h4>Codecademy</h4>
+                  <h4>Front end app development</h4>
+                </div>
+              </div>
+                <div class="education ">
+                  <div class="education-logo flex ">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                  </div>
+                  <div class="education-content">
+                    <h6>August-November</h5>
+                      <h4>General Assembly</h4>
+                      <h4>Web Development Immersive</h4>
                   </div>
                 </div>
-              </a>
+                  <a href="https://www.udemy.com/certificate/UC-ZXMDYAZI/" target=_blank>
+                    <div class="education ">
+                      <div class="education-logo flex ">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                      </div>
+                      <div class="education-content">
+                        <h6>June-September</h5>
+                          <h4>Udemy</h4>
+                          <h4>Web Development Bootcamp</h4>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="https://www.credential.net/uisdhmib" target=_blank>
+                      <div class="education ">
+                        <div class="education-logo flex ">
+                          <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        </div>
+                        <div class="education-content">
+                          <h6>June-September</h5>
+                            <h4>Codecademy</h4>
+                            <h4>Build websites from scratch</h4>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div> -->
+              
+                <div class="noidea border">
+                </div>
+              </section>
+              <section class="flex">
+                <div class="">
               </div>
-            </div>
-            </div>
-              <div class="noidea border">
-
-              </div>
-            </section>
-            <section class="flex">
-              <div class="">
-
-              </div>
-              <div class="">
-
-              </div>
-            </section>
-          </main>
-        </body>
-        </html>
+            <div class="">
+          </div>
+        </section>
+      </div>
+      <footer>
+        <span class="made-by">Made by Goran Angelovski</span>
+        <nav>
+          <ul id="spin2">
+            <li class="follow-me"><a href="https://www.facebook.com/goran.angelovski.3" target="_blank"><i class="fa fa-facebook facebook flex" aria-hidden="true"></i></a></li>
+            <li class="follow-me"><a href="https://www.linkedin.com/in/goran-angelovski/" target="_blank"><i class="fa fa-linkedin linkedin flex" aria-hidden="true"></i></a></li>
+            <li class="follow-me"><a href="https://github.com/GoranBT" target="_blank"><i class="fa fa-github github flex" aria-hidden="true"></i></a></li>
+          </ul>
+        </nav>
+      </footer>
+      <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+      <script type="text/javascript" src="resources/slick/slick.min.js"></script>
+      <script src="resources/src/js/app.js" charset="utf-8"></script>
+    </body>
+  </html>
