@@ -43,6 +43,20 @@ $(document).ready(function(){
   $('.testing').slideDown();
 
 
-
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 51.536342 , lng: -0.32307},
+    zoom: 14
+  });
+  cityCircle = new google.maps.Circle({
+    strokeColor: '#06BC9B',
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: '#45b862',
+    fillOpacity: 0.35,
+    map: map,
+    center: {lat: 51.536342, lng: -0.32307},
+    radius: 500,
+    disableDefaultUI: true
+  });
 
 });
