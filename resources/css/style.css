@@ -863,12 +863,12 @@ header nav ul li > a:hover:before {
 }
 
 .timeline-content span {
-   font-size: 15px;
+   font-size: 1.2rem;
    color: #a4a4a4;
 }
 
 .timeline-content p {
-   font-size: 14px;
+   font-size: 1rem;
    line-height: 1.5em;
    word-spacing: 1px;
    color: #888;
