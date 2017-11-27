@@ -177,17 +177,17 @@ const map1 =[
 
 $(document).ready(function(){
   console.log('hello');
-
-  $('.carousel').slick({
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear',
-    nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-    prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-  });
-
+  if ($('div.carousel').length > 0){
+    $('.carousel').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+      prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+    });
+  }
 
   $('.menu').on('click', function(){
     $('.mobile').toggleClass('active');
