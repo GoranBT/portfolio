@@ -196,11 +196,6 @@ $(document).ready(function(){
   });
 
 
-  // $('.hamburger').on('click', function(){
-  //   $('.hamburger').toggleClass('is-active');
-  // });
-
-
   //Check to see if the window is top if not then display button
   $(window).scroll(function(){
     if ($(this).scrollTop() > 150) {
