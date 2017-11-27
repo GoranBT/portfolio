@@ -174,102 +174,109 @@ const map1 =[
   }
 ];
 
-  
+
 $(document).ready(function(){
 
+  const $carousel = $('.carousel');
+  const $carousel1 = $('.carousel1');
+  const $carousel2 = $('.carousel2');
+  const $carousel3 = $('.carousel3');
+  const $carousel4 = $('.carousel4');
+  const $carousel5 = $('.carousel5');
+  const $menu = $('.menu');
+  const $hamburger = $('.hamburger');
+  const $mobile = $('.mobile');
+  const $scrollToTop = $('.scrollToTop');
   //carousel
   if ($('div.carousel').length > 0){
-    $('.carousel').slick({
+    $carousel.slick({
       dots: true,
       infinite: true,
       speed: 500,
       fade: true,
       cssEase: 'linear',
+      lazyLoadError: 'progressive',
       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
     });
-    $('.carousel1').slick({
+    $carousel1.slick({
       dots: true,
       infinite: true,
       speed: 500,
       fade: true,
       cssEase: 'linear',
+      lazyLoadError: 'progressive',
       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
     });
-    $('.carousel2').slick({
+    $carousel2.slick({
       dots: true,
       infinite: true,
       speed: 500,
       fade: true,
       cssEase: 'linear',
+      lazyLoadError: 'progressive',
       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
     });
-    $('.carousel3').slick({
+    $carousel3.slick({
       dots: true,
       infinite: true,
       speed: 500,
       fade: true,
       cssEase: 'linear',
+      lazyLoadError: 'progressive',
       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
     });
-    $('.carousel4').slick({
+    $carousel4.slick({
       dots: true,
       infinite: true,
       speed: 500,
       fade: true,
       cssEase: 'linear',
+      lazyLoadError: 'progressive',
       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
     });
-    $('.carousel5').slick({
+    $carousel5.slick({
       dots: true,
       infinite: true,
       speed: 500,
       fade: true,
       cssEase: 'linear',
+      lazyLoadError: 'progressive',
       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
     });
-    $('.carousel6').slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      fade: true,
-      cssEase: 'linear',
-      nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-      prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-    });
+
   }
 
   //hamburger responsive menu
-  $('.menu').on('click', function(){
-    $('.mobile').toggleClass('active');
-    $('.hamburger').toggleClass('is-active');
-
+  $menu.on('click', function(){
+    $mobile.toggleClass('active');
+    $hamburger.toggleClass('is-active');
   });
 
 
   //Check to see if the window is top if not then display button
   $(window).scroll(function(){
     if ($(this).scrollTop() > 150) {
-      $('.scrollToTop').fadeIn();
+      $scrollToTop.fadeIn();
     } else {
-      $('.scrollToTop').fadeOut();
+      $scrollToTop.fadeOut();
     }
   });
 
   //Click event to scroll to top
-  $('.scrollToTop').click(function(){
+  $scrollToTop.click(function(){
     $('html, body').animate({scrollTop: 0},1000);
     return false;
 
   });
 
   //fadeIn text
-  $('.testing').fadeIn(2000);
+  $('.testing').fadeIn(3000);
 
   //Google map
   if ($('div#map').length > 0){
