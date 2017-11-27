@@ -187,71 +187,72 @@ $(document).ready(function(){
   const $hamburger = $('.hamburger');
   const $mobile = $('.mobile');
   const $scrollToTop = $('.scrollToTop');
-  //carousel
-  if ($('div.carousel').length > 0){
-    $carousel.slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      fade: true,
-      cssEase: 'linear',
-      lazyLoadError: 'progressive',
-      nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-      prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-    });
-    $carousel1.slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      fade: true,
-      cssEase: 'linear',
-      lazyLoadError: 'progressive',
-      nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-      prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-    });
-    $carousel2.slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      fade: true,
-      cssEase: 'linear',
-      lazyLoadError: 'progressive',
-      nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-      prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-    });
-    $carousel3.slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      fade: true,
-      cssEase: 'linear',
-      lazyLoadError: 'progressive',
-      nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-      prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-    });
-    $carousel4.slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      fade: true,
-      cssEase: 'linear',
-      lazyLoadError: 'progressive',
-      nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-      prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-    });
-    $carousel5.slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      fade: true,
-      cssEase: 'linear',
-      lazyLoadError: 'progressive',
-      nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-      prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-    });
 
+
+  //carousel
+
+  function carousel() {
+    if ($('div.carousel').length > 0){
+      $carousel.slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+        prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+      });
+      $carousel1.slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+        prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+      });
+      $carousel2.slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+        prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+      });
+      $carousel3.slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+        prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+      });
+      $carousel4.slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+        prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+      });
+      $carousel5.slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+        prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+      });
+
+    }
   }
 
+  setTimeout(carousel(), 800);
+  
   //hamburger responsive menu
   $menu.on('click', function(){
     $mobile.toggleClass('active');
