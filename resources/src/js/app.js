@@ -178,7 +178,7 @@ const map1 =[
 $(document).ready(function(){
   console.log('hello');
   if ($('div.carousel').length > 0){
-    $('.carousel').slick({
+    $('.carousel, .carousel1, .carousel2, .carousel3, .carousel4, .carousel5').slick({
       dots: true,
       infinite: true,
       speed: 500,
