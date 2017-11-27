@@ -176,17 +176,117 @@ const map1 =[
 
 
 $(document).ready(function(){
-
-  const $carousel = $('.carousel');
-  const $carousel1 = $('.carousel1');
-  const $carousel2 = $('.carousel2');
-  const $carousel3 = $('.carousel3');
-  const $carousel4 = $('.carousel4');
-  const $carousel5 = $('.carousel5');
   const $menu = $('.menu');
   const $hamburger = $('.hamburger');
   const $mobile = $('.mobile');
   const $scrollToTop = $('.scrollToTop');
+
+
+
+  //hamburger responsive menu
+  $menu.on('click', function(){
+    $mobile.toggleClass('active');
+    $hamburger.toggleClass('is-active');
+  });
+
+
+  //Check to see if the window is top if not then display button
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 150) {
+      $scrollToTop.fadeIn();
+    } else {
+      $scrollToTop.fadeOut();
+    }
+  });
+
+  //Click event to scroll to top
+  $scrollToTop.click(function(){
+    $('html, body').animate({scrollTop: 0},1000);
+    return false;
+
+  });
+
+  //fadeIn text
+  $('.testing').fadeIn(3000);
+
+  //Google map
+  if ($('div#map').length > 0){
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 51.536342 , lng: -0.32307},
+      zoom: 14,
+      map: map,
+      styles: map1,
+      zoomControl: false
+    });
+    cityCircle = new google.maps.Circle({
+      strokeColor: '#06BC9B',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: '#06BC9B',
+      fillOpacity: 0.35,
+      map: map,
+      center: {lat: 51.536342, lng: -0.32307},
+      radius: 500,
+      disableDefaultUI: true
+    });
+  }
+
+  if ($('div.carousel').length > 0){
+    $('.carousel, .carousel1, .carousel2, .carousel3, .carousel4, .carousel5').lightSlider({
+      item: 1,
+      autoWidth: false,
+      slideMove: 1,
+      slideMargin: 10,
+
+      addClass: '',
+      mode: 'fade',
+      useCSS: true,
+      cssEasing: 'ease',
+      easing: 'linear',
+
+      speed: 400, //ms'
+      auto: false,
+      loop: true,
+      slideEndAnimation: true,
+      pause: 2000,
+
+      keyPress: false,
+      controls: true,
+      prevHtml: '',
+      nextHtml: '',
+
+      rtl: false,
+      adaptiveHeight: false,
+
+      vertical: false,
+      verticalHeight: 400,
+      vThumbWidth: 100,
+
+      thumbItem: 10,
+      pager: true,
+      gallery: false,
+      galleryMargin: 5,
+      thumbMargin: 5,
+      currentPagerPosition: 'middle',
+
+      enableTouch: true,
+      enableDrag: true,
+      freeMove: true,
+      swipeThreshold: 40,
+
+      responsive: []
+
+
+    });
+  }
+
+
+  // const $carousel = $('.carousel');
+  // const $carousel1 = $('.carousel1');
+  // const $carousel2 = $('.carousel2');
+  // const $carousel3 = $('.carousel3');
+  // const $carousel4 = $('.carousel4');
+  // const $carousel5 = $('.carousel5');
 
 
   //carousel
@@ -252,111 +352,6 @@ $(document).ready(function(){
   // }
   //
   // setTimeout(carousel(), 800);
-
-  //hamburger responsive menu
-  $menu.on('click', function(){
-    $mobile.toggleClass('active');
-    $hamburger.toggleClass('is-active');
-  });
-
-
-  //Check to see if the window is top if not then display button
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 150) {
-      $scrollToTop.fadeIn();
-    } else {
-      $scrollToTop.fadeOut();
-    }
-  });
-
-  //Click event to scroll to top
-  $scrollToTop.click(function(){
-    $('html, body').animate({scrollTop: 0},1000);
-    return false;
-
-  });
-
-  //fadeIn text
-  $('.testing').fadeIn(3000);
-
-  //Google map
-  if ($('div#map').length > 0){
-    var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 51.536342 , lng: -0.32307},
-      zoom: 14,
-      map: map,
-      styles: map1,
-      zoomControl: false
-    });
-    cityCircle = new google.maps.Circle({
-      strokeColor: '#06BC9B',
-      strokeOpacity: 0.8,
-      strokeWeight: 2,
-      fillColor: '#06BC9B',
-      fillOpacity: 0.35,
-      map: map,
-      center: {lat: 51.536342, lng: -0.32307},
-      radius: 500,
-      disableDefaultUI: true
-    });
-  }
-
-
-  $('.carousel, .carousel1, .carousel2, .carousel3, .carousel4, .carousel5').lightSlider({
-    item: 1,
-    autoWidth: false,
-    slideMove: 1,
-    slideMargin: 10,
-
-    addClass: '',
-    mode: 'slide',
-    useCSS: true,
-    cssEasing: 'ease',
-    easing: 'linear',
-
-    speed: 400, //ms'
-    auto: false,
-    loop: false,
-    slideEndAnimation: true,
-    pause: 2000,
-
-    keyPress: false,
-    controls: true,
-    prevHtml: '',
-    nextHtml: '',
-
-    rtl: false,
-    adaptiveHeight: false,
-
-    vertical: false,
-    verticalHeight: 400,
-    vThumbWidth: 100,
-
-    thumbItem: 10,
-    pager: true,
-    gallery: false,
-    galleryMargin: 5,
-    thumbMargin: 5,
-    currentPagerPosition: 'middle',
-
-    enableTouch: true,
-    enableDrag: true,
-    freeMove: true,
-    swipeThreshold: 40,
-
-    responsive: [],
-
-    onBeforeStart: function (el) {},
-    onSliderLoad: function (el) {},
-    onBeforeSlide: function (el) {},
-    onAfterSlide: function (el) {},
-    onBeforeNextSlide: function (el) {},
-    onBeforePrevSlide: function (el) {}
-  });
-
-
-
-
 
 
 
