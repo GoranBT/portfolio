@@ -190,69 +190,69 @@ $(document).ready(function(){
 
 
   //carousel
+  //
+  // function carousel() {
+  //   if ($('div.carousel').length > 0){
+  //     $carousel.slick({
+  //       dots: true,
+  //       infinite: true,
+  //       speed: 500,
+  //       fade: true,
+  //       cssEase: 'linear',
+  //       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+  //       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+  //     });
+  //     $carousel1.slick({
+  //       dots: true,
+  //       infinite: true,
+  //       speed: 500,
+  //       fade: true,
+  //       cssEase: 'linear',
+  //       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+  //       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+  //     });
+  //     $carousel2.slick({
+  //       dots: true,
+  //       infinite: true,
+  //       speed: 500,
+  //       fade: true,
+  //       cssEase: 'linear',
+  //       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+  //       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+  //     });
+  //     $carousel3.slick({
+  //       dots: true,
+  //       infinite: true,
+  //       speed: 500,
+  //       fade: true,
+  //       cssEase: 'linear',
+  //       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+  //       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+  //     });
+  //     $carousel4.slick({
+  //       dots: true,
+  //       infinite: true,
+  //       speed: 500,
+  //       fade: true,
+  //       cssEase: 'linear',
+  //       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+  //       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+  //     });
+  //     $carousel5.slick({
+  //       dots: true,
+  //       infinite: true,
+  //       speed: 500,
+  //       fade: true,
+  //       cssEase: 'linear',
+  //       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+  //       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+  //     });
+  //
+  //   }
+  // }
+  //
+  // setTimeout(carousel(), 800);
 
-  function carousel() {
-    if ($('div.carousel').length > 0){
-      $carousel.slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-        prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-      });
-      $carousel1.slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-        prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-      });
-      $carousel2.slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-        prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-      });
-      $carousel3.slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-        prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-      });
-      $carousel4.slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-        prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-      });
-      $carousel5.slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-        prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-      });
-
-    }
-  }
-
-  setTimeout(carousel(), 800);
-  
   //hamburger responsive menu
   $menu.on('click', function(){
     $mobile.toggleClass('active');
@@ -300,6 +300,79 @@ $(document).ready(function(){
       disableDefaultUI: true
     });
   }
+
+
+  $('.carousel, .carousel1, .carousel2, .carousel3, .carousel4, .carousel5').lightSlider({
+    item: 1,
+    autoWidth: false,
+    slideMove: 1,
+    slideMargin: 10,
+
+    addClass: '',
+    mode: 'slide',
+    useCSS: true,
+    cssEasing: 'ease',
+    easing: 'linear',
+
+    speed: 400, //ms'
+    auto: false,
+    loop: false,
+    slideEndAnimation: true,
+    pause: 2000,
+
+    keyPress: false,
+    controls: true,
+    prevHtml: '',
+    nextHtml: '',
+
+    rtl: false,
+    adaptiveHeight: false,
+
+    vertical: false,
+    verticalHeight: 400,
+    vThumbWidth: 100,
+
+    thumbItem: 10,
+    pager: true,
+    gallery: false,
+    galleryMargin: 5,
+    thumbMargin: 5,
+    currentPagerPosition: 'middle',
+
+    enableTouch: true,
+    enableDrag: true,
+    freeMove: true,
+    swipeThreshold: 40,
+
+    responsive: [],
+
+    onBeforeStart: function (el) {},
+    onSliderLoad: function (el) {},
+    onBeforeSlide: function (el) {},
+    onAfterSlide: function (el) {},
+    onBeforeNextSlide: function (el) {},
+    onBeforePrevSlide: function (el) {}
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 });
