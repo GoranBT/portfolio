@@ -276,12 +276,7 @@ header nav ul li {
 /*section .process{
   background-color: #eee8e2;
 }*/
-.process{
 
-  width: 100%;
-  height: 100%;
-  background-color: #eee8e2;
-}
 .process-border{
 
 }
@@ -310,7 +305,7 @@ padding-bottom: 3%;
 }
 .process-box {
   width: 25%;
-height: 300px;
+height: 350px;
   margin: 30px;
   flex-direction: column;
     border: 1px solid gray;
@@ -631,6 +626,13 @@ border-radius: 5px;
   .s-home-container {
     width: 95%;
     flex-wrap: wrap;
+  }
+  .about-me-container {
+    padding: 0;
+  }
+  .profile-image-holder img {
+    width: 250px;
+    height: 250px;
   }
 .skills-container{
   margin: 20px;
@@ -1124,4 +1126,13 @@ margin: 0 20px 0 20px
 }
 .tags-container{
   margin: 0 auto;
+}
+.process-container{
+
+  width: 100%;
+  height: 100%;
+  background-color: #eee8e2;
+}
+.process-icon-container{
+  padding-top: 10%;
 }
