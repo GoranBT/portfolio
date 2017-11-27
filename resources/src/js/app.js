@@ -1,4 +1,5 @@
 
+//map style
 const map1 =[
   {
     'featureType': 'administrative',
@@ -173,12 +174,66 @@ const map1 =[
   }
 ];
 
-
-
+  
 $(document).ready(function(){
-  console.log('hello');
+
+  //carousel
   if ($('div.carousel').length > 0){
-    $('.carousel, .carousel1, .carousel2, .carousel3, .carousel4, .carousel5').slick({
+    $('.carousel').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+      prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+    });
+    $('.carousel1').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+      prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+    });
+    $('.carousel2').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+      prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+    });
+    $('.carousel3').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+      prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+    });
+    $('.carousel4').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+      prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+    });
+    $('.carousel5').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+      prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+    });
+    $('.carousel6').slick({
       dots: true,
       infinite: true,
       speed: 500,
@@ -189,6 +244,7 @@ $(document).ready(function(){
     });
   }
 
+  //hamburger responsive menu
   $('.menu').on('click', function(){
     $('.mobile').toggleClass('active');
     $('.hamburger').toggleClass('is-active');
@@ -212,9 +268,10 @@ $(document).ready(function(){
 
   });
 
-  $('.testing').slideDown();
+  //fadeIn text
+  $('.testing').fadeIn(2000);
 
-
+  //Google map
   if ($('div#map').length > 0){
     var map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 51.536342 , lng: -0.32307},

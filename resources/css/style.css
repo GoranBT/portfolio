@@ -28,12 +28,14 @@ width: 100%;
 
 }
 .testing{
-  font-size: 3rem;
+  font-size: 6rem;
+  color: white;
+  font-weight: bold;
 }
 .banner-title{
   text-align: center;
   position: relative;
-  top: 10%;
+  top: 55%;
   /*left: 40%;  */
 }
 .process-wrapper, .skills-wrapper {
@@ -271,10 +273,23 @@ header nav ul li {
       from { width: 0; }
   }
 }
+/*section .process{
+  background-color: #eee8e2;
+}*/
 .process{
-  background-color: #f9f6f3;
-}
 
+  width: 100%;
+  height: 100%;
+  background-color: #eee8e2;
+}
+.process-border{
+
+}
+.process-text{
+  width: 85%;
+  padding-bottom: 12%;
+  font-size: 1.1rem;
+}
 .process .work-together-title{
 background-color: #eee8e2;
 margin: 0;
@@ -288,15 +303,15 @@ padding-bottom: 3%;
 .process-icon{
   color: white;
   font-size: 2.5rem;
-  background-color: #f6f632;
+  background-color: #fad332;
   border-radius: 50%;
   height: 80px;
   width: 80px;
 }
 .process-box {
-  width: 27%;
-  height: auto;
-  margin: 15px;
+  width: 25%;
+height: 300px;
+  margin: 30px;
   flex-direction: column;
     border: 1px solid gray;
     background-color: white;
@@ -304,12 +319,33 @@ padding-bottom: 3%;
 }
 
 .process-border{
-  border: 2px solid #f6f632;
+  border: 2px solid #fad332fc;
   padding: 5px;
   border-radius: 50%;
 }
 
 
+.yellow{
+  background-color: #fad332fc;
+
+}
+.yellow-border{
+  border: 2px solid #fad332fc;
+}
+.blue{
+background-color: #15c18ffc;
+
+}
+.blue-border{
+  border: 2px solid #15c18ffc;
+}
+.green{
+  background-color: #42b6dd;
+
+}
+.green-border{
+  border: 2px solid #42b6dd;
+}
 .projects-home-wrapper {
   flex-direction: column;
 
@@ -353,9 +389,10 @@ padding-bottom: 3%;
 
 
 .work-together-title {
-  font-size: 2.2rem;
+  font-size: 2.9rem;
   padding: 4%;
   text-align: center;
+  color: #37474f;
 }
 .work-together-title h3, h4 {
   margin-bottom: 5%;
@@ -363,11 +400,24 @@ padding-bottom: 3%;
 
 
 
+.what-i-do{
+  width: 100%;
+  font-size: 1.4rem;
+  margin: 5% auto;
+  width: 85%;
+  background-color: #eee8e2;
+  color: #37474f;
+}
 
 
-
-
-
+.what-i-do-header{
+  color:#37474f
+}
+.process-box-title{
+  font-size: 2.1rem;
+  color: #37474f;
+  padding: 6% 0 8% 0;
+}
 
 /*footer*/
 footer {
@@ -446,7 +496,7 @@ background-color: #eee8e2;
   height: 300px;
   width: 300px;
     border-radius: 30%;
-    border: 2px solid white;
+    border: 2px solid #37474f;
 }
 .info {
   width: 47%;
@@ -506,7 +556,7 @@ padding-left: 20%;
 
 .projects-home-wrapper{
   flex-direction: column;
-  background-color: white;
+  background-color: #fafafa;
 }
 .projects-home{
   background-color: #eee8e2;
@@ -555,7 +605,10 @@ border-radius: 5px;
   margin: 20px;
 }
 .process-box{
-  width: 100%;
+  width: 70%;
+}
+.testing{
+  font-size: 5rem;
 }
 .about, .about1{
   background-color: #eee8e2;
@@ -582,7 +635,9 @@ border-radius: 5px;
 .skills-container{
   margin: 20px;
 }
-
+.process-box{
+  width: 90%;
+}
 
 .carousel-holder, .project-info {
   width: 100%;
@@ -978,6 +1033,13 @@ margin: 0 20px 0 20px
       left: 12px;
       width: 2px;
    }
+   .testing{
+     font-size: 2.4rem;
+   }
+   .what-i-do{
+     width: 90%;
+     background-color: #eee8e2;
+   }
    .banner{
      height: 45vh;
    }
@@ -1003,4 +1065,63 @@ margin: 0 20px 0 20px
    .mail-contact, .linkedin-contact, .github-contact{
      font-size: 1.5rem;
    }
+}
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.tags li {
+  float: left;
+}
+
+.tag {
+  background: #eee8e2;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #eee8e2;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tag:hover {
+  background-color: #06BC9B;
+  color: white;
+}
+
+.tag:hover::after {
+   border-left-color: #06BC9B;
+}
+.tags-container{
+  margin: 0 auto;
 }
