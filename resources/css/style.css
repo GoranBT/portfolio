@@ -602,6 +602,14 @@ border-radius: 5px;
     width: 95%;
     flex-wrap: wrap;
   }
+  .banner{
+    height: 60vh;
+  }
+  .testing{
+
+    font-size: 3.4rem;
+  }
+
   .profile-image-holder{
     padding-top: 30px;
   }
@@ -632,6 +640,24 @@ border-radius: 5px;
   order: 2;
 }
 }
+.technologies img {
+  height: 40px;
+  width: 40px;
+  padding: 3px;
+}
+@media only screen and (max-width: 700px){
+.banner-title{
+  top: 30%;
+}
+.banner{
+  height: 80vh;
+}
+.technologies img {
+  width: 35px;
+  height: 35px;
+}
+}
+
 @media only screen and (max-width: 600px){
 
   .s-home-container {
@@ -651,7 +677,15 @@ border-radius: 5px;
 .process-box{
   width: 90%;
 }
-
+.testing{
+  font-size: 2.2rem;
+}
+.banner{
+  height: 40vh;
+}
+.banner-title{
+top: 50%;
+}
 .carousel-holder, .project-info {
   width: 100%;
 }
@@ -750,11 +784,7 @@ footer nav ul li {
 .technologies{
     margin-top: 5%;
 }
-.technologies img {
-  height: 40px;
-  width: 40px;
-  padding: 3px;
-}
+
 .links {
   display: flex;
   justify-content: center;
@@ -1044,15 +1074,10 @@ margin: 0 20px 0 20px
       left: 12px;
       width: 2px;
    }
-   .testing{
-     font-size: 2.4rem;
-   }
+
    .what-i-do{
      width: 90%;
      background-color: #eee8e2;
-   }
-   .banner{
-     height: 45vh;
    }
    .contact-container{
      display: flex;
