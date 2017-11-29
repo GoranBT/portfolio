@@ -203,10 +203,9 @@ $(document).ready(function(){
   $scrollToTop.click(function(){
     $('html, body').animate({scrollTop: 0},1000);
     return false;
-
   });
 
-  //fadeIn text
+  //fadeIn text banner title
   $('.testing').fadeIn(3000);
 
   //Google map
@@ -231,8 +230,10 @@ $(document).ready(function(){
     });
   }
 
+  //carousel section
+
   if ($('div.carousel').length > 0){
-    $('.carousel, .carousel1, .carousel2, .carousel3, .carousel4, .carousel5').lightSlider({
+    $('.carousel').lightSlider({
       item: 1,
       autoWidth: false,
       slideMove: 1,
@@ -275,99 +276,6 @@ $(document).ready(function(){
       swipeThreshold: 40,
 
       responsive: []
-
-
     });
   }
-
-
-  // const $carousel = $('.carousel');
-  // const $carousel1 = $('.carousel1');
-  // const $carousel2 = $('.carousel2');
-  // const $carousel3 = $('.carousel3');
-  // const $carousel4 = $('.carousel4');
-  // const $carousel5 = $('.carousel5');
-
-
-  //carousel
-  //
-  // function carousel() {
-  //   if ($('div.carousel').length > 0){
-  //     $carousel.slick({
-  //       dots: true,
-  //       infinite: true,
-  //       speed: 500,
-  //       fade: true,
-  //       cssEase: 'linear',
-  //       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-  //       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-  //     });
-  //     $carousel1.slick({
-  //       dots: true,
-  //       infinite: true,
-  //       speed: 500,
-  //       fade: true,
-  //       cssEase: 'linear',
-  //       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-  //       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-  //     });
-  //     $carousel2.slick({
-  //       dots: true,
-  //       infinite: true,
-  //       speed: 500,
-  //       fade: true,
-  //       cssEase: 'linear',
-  //       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-  //       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-  //     });
-  //     $carousel3.slick({
-  //       dots: true,
-  //       infinite: true,
-  //       speed: 500,
-  //       fade: true,
-  //       cssEase: 'linear',
-  //       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-  //       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-  //     });
-  //     $carousel4.slick({
-  //       dots: true,
-  //       infinite: true,
-  //       speed: 500,
-  //       fade: true,
-  //       cssEase: 'linear',
-  //       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-  //       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-  //     });
-  //     $carousel5.slick({
-  //       dots: true,
-  //       infinite: true,
-  //       speed: 500,
-  //       fade: true,
-  //       cssEase: 'linear',
-  //       nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-  //       prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
-  //     });
-  //
-  //   }
-  // }
-  //
-  // setTimeout(carousel(), 800);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
