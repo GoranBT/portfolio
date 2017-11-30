@@ -181,14 +181,11 @@ $(document).ready(function(){
   const $mobile = $('.mobile');
   const $scrollToTop = $('.scrollToTop');
 
-
-
   //hamburger responsive menu
   $menu.on('click', function(){
     $mobile.toggleClass('active');
     $hamburger.toggleClass('is-active');
   });
-
 
   //Check to see if the window is top if not then display button
   $(window).scroll(function(){
@@ -231,7 +228,6 @@ $(document).ready(function(){
   }
 
   //carousel section
-
   if ($('div.carousel').length > 0){
     $('.carousel').lightSlider({
       item: 1,
