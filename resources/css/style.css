@@ -907,3 +907,6 @@ background-color: #333
     padding: 3px;
   }
 }
+.carousel.flex.lightSlider.lSFade::before{
+  height: 300px!important;
+}
