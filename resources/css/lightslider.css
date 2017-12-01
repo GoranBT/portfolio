@@ -44,7 +44,7 @@
     position: relative;
 }
 .lSSlideWrapper .lSFade > * {
-    height: 300px;
+    height: 330px;
     position: absolute !important;
     top: 0;
     left: 0;
