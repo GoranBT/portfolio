@@ -11,10 +11,12 @@
 .lightSlider:before, .lightSlider:after {
     content: " ";
     display: table;
+    height: 300px;
 }
 .lightSlider {
     overflow: hidden;
     margin: 0;
+    height: 300px;
 }
 .lSSlideWrapper {
     max-width: 100%;
@@ -181,7 +183,7 @@
 }
 
 
-/* vertical */
+ /*vertical */
 .lSSlideOuter.vertical {
     position: relative;
 }
