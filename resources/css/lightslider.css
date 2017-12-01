@@ -40,9 +40,11 @@
     transition-timing-function: inherit !important;
 }
 .lSSlideWrapper .lSFade {
+    height: 300px;
     position: relative;
 }
 .lSSlideWrapper .lSFade > * {
+    height: 300px;
     position: absolute !important;
     top: 0;
     left: 0;
