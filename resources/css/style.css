@@ -847,7 +847,7 @@ background-color: #333
     order: 2;
   }
   .lSSlideWrapper .lSFade > *{
-    height: 225px;
+    min-height: 205px;
   }
 }
 
@@ -862,6 +862,7 @@ background-color: #333
     width: 35px;
     height: 35px;
   }
+
 }
 
 @media only screen and (max-width: 600px){
@@ -894,7 +895,8 @@ background-color: #333
   .carousel-holder{
   }
   .carousel{
-    height: auto;
+
+    width: 95%;
   }
   .box{
     flex-direction: column;
@@ -909,12 +911,5 @@ background-color: #333
   footer nav ul li {
     padding: 3px;
   }
-  .lSSlideWrapper .lSFade > *{
-    height: 220px;
-  }
-}
-@media only screen and (min-width: 1300px){
-  .lSSlideWrapper .lSFade > *{
-    height: 405px;
-  }
+
 }
