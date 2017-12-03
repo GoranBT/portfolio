@@ -500,8 +500,8 @@ hr{
   background-color: #eee8e2;
 }
 .project-info{
-  width: 45%;
-  padding:5% 5%;
+  width: 43%;
+  padding:4% 4%;
   flex-direction: column;
 }
 .project-info-home{
@@ -514,13 +514,13 @@ hr{
   height: 300px;
 }
 .carousel-holder{
-  width: 50%;
-  padding: 3%;
+  width: 57%;
+  margin: 1%;
 }
 .box {
-  width: 95%;
+  width: 100%;
   height: auto;
-  margin-bottom: 2%;
+  margin: 1%;
   background-color: #eee8e2;
   border-radius: 5px;
 }
@@ -531,7 +531,7 @@ hr{
 }
 
 .technologies{
-    margin-top: 5%;
+  margin-top: 5%;
 }
 .links {
   display: flex;
