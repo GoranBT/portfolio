@@ -229,7 +229,7 @@ $(document).ready(function(){
   }
 
   //carousel section
-  if ($carousel.length === 7){
+  if ($('div.carousel' === 7)){
     $carousel.lightSlider({
       item: 1,
       autoWidth: false,
