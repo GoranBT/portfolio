@@ -180,6 +180,7 @@ $(document).ready(function(){
   const $hamburger = $('.hamburger');
   const $mobile = $('.mobile');
   const $scrollToTop = $('.scrollToTop');
+  const $carousel = $('.carousel');
 
   //hamburger responsive menu
   $menu.on('click', function(){
@@ -228,8 +229,8 @@ $(document).ready(function(){
   }
 
   //carousel section
-  if ($('div.carousel').length > 0){
-    $('.carousel').lightSlider({
+  if ($carousel.length === $carousel.length){
+    $carousel.lightSlider({
       item: 1,
       autoWidth: false,
       slideMove: 1,
@@ -256,7 +257,7 @@ $(document).ready(function(){
       adaptiveHeight: false,
 
       vertical: false,
-      verticalHeight: 400,
+      verticalHeight: 310,
       vThumbWidth: 100,
 
       thumbItem: 10,
@@ -273,7 +274,9 @@ $(document).ready(function(){
 
       responsive: []
     });
+
   }
+
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments)};

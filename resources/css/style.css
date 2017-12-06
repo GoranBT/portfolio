@@ -36,7 +36,7 @@ main {
   justify-content: space-between;
 }
 .container {
-  padding: 32px 24px;
+  padding: 1% 2%;
 }
 /*Arrow to top*/
 .a-arrow-up{
@@ -333,6 +333,7 @@ h1 {
   width: 85%;
   padding-bottom: 12%;
   font-size: 1.1rem;
+  text-align: center;
 }
 .process .work-together-title{
   background-color: #eee8e2;
@@ -411,7 +412,7 @@ h1 {
   margin-bottom: 5%;
 }
 .what-i-do{
-  width: 100%;
+  text-align: center;
   font-size: 1.4rem;
   margin: 5% auto;
   width: 85%;
@@ -511,8 +512,8 @@ hr{
 .carousel{
   width: 100%;
   padding: 5%;
-  height: 300px;
 }
+
 .carousel-holder{
   width: 57%;
   margin: 1%;
@@ -520,7 +521,7 @@ hr{
 .box {
   width: 100%;
   height: auto;
-  margin: 1%;
+  margin: 1% 0 1% 0;
   background-color: #eee8e2;
   border-radius: 5px;
 }
@@ -597,6 +598,9 @@ hr{
 }
 #eShopper{
   color:#43b861;
+}
+#jammming{
+  color:#371484;
 }
 
 .about-second{
@@ -700,12 +704,12 @@ hr{
 
 /*Contact page <----------------------*/
 .contact, .map-holder {
-  width: 47%;
+  width: 50%;
 }
-.contact{
-  background-color: #eee8e2;
-  margin: 2% 2% 3% 2%;
+.map-holder{
+  padding: 1.5%;
 }
+
 .contact > div {
   width: 100%;
   margin: 2.2%;
@@ -746,9 +750,26 @@ background-color: #333
 .container-t-title{
   background-color: #eee8e2;
 }
-.contact-container{
-  background-color: #eee8e2;
-  margin: 2% 3% 3% 2%;
+
+@media screen and (min-width: 1600px) {
+  body{
+    font-size: 24px;
+  }
+  .button-class {
+    width: 180px;
+    height: 50px;
+    font-size: 22px;
+  }
+  .profile-image-holder img {
+    width: 450px;
+    height: 450px;
+}
+}
+
+@media screen and (max-width: 1050px) {
+  /*.lSSlideWrapper .lSFade > *{
+    min-height: 300px;
+  }*/
 }
 
 
@@ -831,11 +852,9 @@ background-color: #333
   .testing{
     font-size: 2.7rem;
   }
-  .about, .about1{
-    background-color: #eee8e2;
+  .about{
     flex-wrap: wrap;
     flex-direction: column;
-    height: auto;
   }
   .profile, .info, .education-left-container, .noidea{
     width: 100%
@@ -846,9 +865,10 @@ background-color: #333
   .project-info{
     order: 2;
   }
-  .lSSlideWrapper .lSFade > *{
+
+  /*.lSSlideWrapper .lSFade > *{
     min-height: 205px;
-  }
+  }*/
 }
 
 @media only screen and (max-width: 700px){
@@ -911,5 +931,7 @@ background-color: #333
   footer nav ul li {
     padding: 3px;
   }
-
+  /*.lSSlideWrapper .lSFade > *{
+    min-height: 195px;
+  }*/
 }

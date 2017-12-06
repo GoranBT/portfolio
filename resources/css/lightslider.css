@@ -11,7 +11,7 @@
 .lightSlider:before, .lightSlider:after {
     content: " ";
     display: table;
-    height: 300px;
+    /*height: 300px;*/
 }
 .lightSlider {
     overflow: hidden;
@@ -44,7 +44,7 @@
     position: relative;
 }
 .lSSlideWrapper .lSFade > * {
-    min-height: 330px;
+    /*min-height: 360px;*/
     position: absolute !important;
     top: 0;
     left: 0;
