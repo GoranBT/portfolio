@@ -1,3 +1,5 @@
+/* global google dataLayer */
+
 
 //map style
 const map1 =[
@@ -180,7 +182,14 @@ $(document).ready(function(){
   const $hamburger = $('.hamburger');
   const $mobile = $('.mobile');
   const $scrollToTop = $('.scrollToTop');
-  const $carousel = $('.carousel');
+  const $carousel = $('#eshop');
+  const $carousel1 = $('#hidd');
+  const $carousel2 = $('#mix');
+  const $carousel3 = $('#code');
+  const $carousel4 = $('#jamm');
+  const $carousel5 = $('#rave');
+  const $carousel6 = $('#colm');
+  const $carousels = [$carousel, $carousel1, $carousel2, $carousel3, $carousel4, $carousel5, $carousel6];
 
   //hamburger responsive menu
   $menu.on('click', function(){
@@ -229,57 +238,19 @@ $(document).ready(function(){
   }
 
   //carousel section
-  if ($('div.carousel' === 7)){
-    $carousel.lightSlider({
+  if ($('div.carousel' === $carousels.length)){
+    $carousels.map(carousel => carousel.lightSlider({
       item: 1,
-      autoWidth: false,
       slideMove: 1,
-      slideMargin: 10,
-
-      addClass: '',
       mode: 'fade',
-      useCSS: true,
-      cssEasing: 'ease',
-      easing: 'linear',
-
-      speed: 400, //ms'
-      auto: false,
-      loop: true,
-      slideEndAnimation: true,
-      pause: 2000,
-
-      keyPress: false,
-      controls: true,
-      prevHtml: '',
-      nextHtml: '',
-
-      rtl: false,
-      adaptiveHeight: false,
-
-      vertical: false,
-      verticalHeight: 310,
-      vThumbWidth: 100,
-
-      thumbItem: 10,
-      pager: true,
-      gallery: false,
-      galleryMargin: 5,
-      thumbMargin: 5,
-      currentPagerPosition: 'middle',
-
-      enableTouch: true,
-      enableDrag: true,
-      freeMove: true,
-      swipeThreshold: 40,
-
-      responsive: []
-    });
-
+      speed: 400
+    }));
   }
 
-
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)};
+  function gtag(){
+    dataLayer.push(arguments);
+  }
   gtag('js', new Date());
 
   gtag('config', 'UA-110589409-1');
