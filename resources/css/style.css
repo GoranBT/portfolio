@@ -1,10 +1,12 @@
-
 /*Fonts*/
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  src: url("../fonts/YanoneKaffeesatz-Regular.ttf");
+}
+
 .lobster-font{
   font-family: 'Lobster', cursive;
-}
-.yanone-font{
-  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 /*General*/
@@ -510,6 +512,7 @@ hr{
   padding: 20px;
 }
 .carousel{
+  height: 100%;
   width: 100%;
   padding: 5%;
 }
@@ -763,15 +766,8 @@ background-color: #333
   .profile-image-holder img {
     width: 450px;
     height: 450px;
+  }
 }
-}
-
-@media screen and (max-width: 1050px) {
-  /*.lSSlideWrapper .lSFade > *{
-    min-height: 300px;
-  }*/
-}
-
 
 @media screen and (max-width: 800px) {
 
@@ -867,7 +863,7 @@ background-color: #333
   }
 
   /*.lSSlideWrapper .lSFade > *{
-    min-height: 205px;
+    min-height: 195px;
   }*/
 }
 
@@ -877,6 +873,12 @@ background-color: #333
   }
   .banner{
     height: 80vh;
+  }
+  .carousel-holder, .project-info {
+    width: 100%;
+  }
+  .box{
+    flex-direction: column;
   }
   .technologies img {
     width: 35px;
@@ -909,18 +911,7 @@ background-color: #333
   .banner-title{
     top: 50%;
   }
-  .carousel-holder, .project-info {
-    width: 100%;
-  }
-  .carousel-holder{
-  }
-  .carousel{
 
-    width: 95%;
-  }
-  .box{
-    flex-direction: column;
-  }
   .made-by{
     display: none;
   }

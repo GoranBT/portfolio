@@ -222,9 +222,10 @@ $(document).ready(function(){
       zoom: 14,
       map: map,
       styles: map1,
-      zoomControl: false
+      zoomControl: false,
+      disableDefaultUI: true
     });
-    cityCircle = new google.maps.Circle({
+    this.cityCircle = new google.maps.Circle({
       strokeColor: '#06BC9B',
       strokeOpacity: 0.8,
       strokeWeight: 2,
@@ -240,10 +241,9 @@ $(document).ready(function(){
   //carousel section
   if ($('div.carousel' === $carousels.length)){
     $carousels.map(carousel => carousel.lightSlider({
-      item: 1,
-      slideMove: 1,
-      mode: 'fade',
-      speed: 400
+      // onSliderLoad: function (el) {
+      //   el[0].height('40vh');
+      // }
     }));
   }
 
