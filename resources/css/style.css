@@ -488,7 +488,13 @@ hr{
 .education-content{
   padding: 0 0 5vh 5vh;
 }
-
+.presentation {
+  display: none;
+  z-index: 9999;
+  height: 25%;
+  width: 20%;
+  position: absolute;
+}
 
 /*Portfolio page<--------------------*/
 
@@ -659,13 +665,17 @@ hr{
   border: 2px solid #06BC9B;
   background: white;
   margin-top: 10px;
-  z-index: 9999
+  z-index: 9998
 }
 .timeline-content {
   width: 95%;
   padding: 0 15px;
   color: black;
 }
+.container-t:last-child {
+  padding-bottom: 100px;
+}
+
 .timeline-content h3 {
   margin-top: 5px;
   margin-bottom: 5px;

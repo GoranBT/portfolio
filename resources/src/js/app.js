@@ -182,14 +182,20 @@ $(document).ready(function(){
   const $hamburger = $('.hamburger');
   const $mobile = $('.mobile');
   const $scrollToTop = $('.scrollToTop');
-  const $carousel = $('#eshop');
-  const $carousel1 = $('#hidd');
-  const $carousel2 = $('#mix');
-  const $carousel3 = $('#code');
-  const $carousel4 = $('#jamm');
-  const $carousel5 = $('#rave');
-  const $carousel6 = $('#colm');
-  const $carousels = [$carousel, $carousel1, $carousel2, $carousel3, $carousel4, $carousel5, $carousel6];
+  const $carousel = $('.carousel');
+  const $presentationdiv = $('.presentationdiv');
+
+
+
+  if ($('div.presentationdiv')){
+    $presentationdiv.on('mouseenter', function(){
+      // const index = $presentationdiv.index(this);
+      $(this).next().show();
+    })
+      .on('mouseleave', function(){
+        $('.presentation').hide();
+      });
+  }
 
   //hamburger responsive menu
   $menu.on('click', function(){
@@ -239,12 +245,8 @@ $(document).ready(function(){
   }
 
   //carousel section
-  if ($('div.carousel' === $carousels.length)){
-    $carousels.map(carousel => carousel.lightSlider({
-      // onSliderLoad: function (el) {
-      //   el[0].height('40vh');
-      // }
-    }));
+  if ($('div.carousel' === $carousel.length)){
+    $carousel.lightSlider();
   }
 
   window.dataLayer = window.dataLayer || [];
